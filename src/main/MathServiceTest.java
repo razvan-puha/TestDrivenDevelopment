@@ -39,4 +39,10 @@ public class MathServiceTest
     {
     	assertFalse(MathService.isLeapYear(2100));
     }
+    
+    @Test
+    public void leapYearShouldBeDivisibleByFourHundredTest()
+    {
+    	assertTrue(MathService.isLeapYear(2400));
+    }
 }
