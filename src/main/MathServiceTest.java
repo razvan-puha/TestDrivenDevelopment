@@ -45,4 +45,11 @@ public class MathServiceTest
     {
     	assertTrue(MathService.isLeapYear(2400));
     }
+    
+    @Test
+    public void negativeYearShouldBeIncrementedByOneBeforeCheckTest()
+    {
+    	// conform https://en.wikipedia.org/wiki/Template:IsLeapYear
+    	assertTrue(MathService.isLeapYear(-103));
+    }
 }
